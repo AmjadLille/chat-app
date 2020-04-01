@@ -4,7 +4,8 @@ import App from "./App";
 import PropTypes from 'prop-types';
 
 class Contact extends React.Component {
-  render() {
+  render(){
+
     return (
       <div className="Contact">
         <img className="avatar" src={this.props.imageSrc} alt="avatar" />
