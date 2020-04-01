@@ -29,7 +29,7 @@ const users = [
   }
 ];
 
-const DisplayList = () =>
+const List = () =>
   users.map(props => (
     <Contact
       name={props.name}
@@ -38,4 +38,4 @@ const DisplayList = () =>
     />
   ));
 
-export default DisplayList;
+export default List;
