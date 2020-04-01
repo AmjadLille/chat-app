@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import App from "./App";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 class Contact extends React.Component {
   render() {
@@ -27,7 +26,7 @@ class Contact extends React.Component {
 export default Contact;
 
 Contact.propTypes = {
-    name: PropTypes.string.isRequired,
-    online : PropTypes.bool.isRequired,
-    imageSrc : PropTypes.string.isRequired,
-  };
+  name: PropTypes.string.isRequired,
+  online: PropTypes.bool.isRequired,
+  imageSrc: PropTypes.string.isRequired
+};
