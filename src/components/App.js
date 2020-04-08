@@ -4,11 +4,11 @@ import Contact from "./Contact";
 
 class App extends Component {
   state = {
-    status: false
+    online: true
   };
 
   switchStatusHandler = () => {
-    this.setState({ status: true });
+    this.setState({ online: !this.state.online });
   };
   render() {
     return (
@@ -16,19 +16,19 @@ class App extends Component {
         <Contact
           name="Jad Harvey"
           imageSrc="https://randomuser.me/api/portraits/med/men/75.jpg"
-          online={this.state.status}
+          online={this.state.online}
           click={this.switchStatusHandler}
         />
         <Contact
           name="Cindy Craig"
           imageSrc="https://randomuser.me/api/portraits/women/96.jpg"
-          online={this.state.status}
+          online={this.state.online}
           click={this.switchStatusHandler}
         />
         <Contact
           name="Elaine Montgomery"
           imageSrc="https://randomuser.me/api/portraits/women/24.jpg"
-          online={this.state.status}
+          online={this.state.online}
           click={this.switchStatusHandler}
         />
       </div>
